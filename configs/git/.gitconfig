@@ -1,8 +1,7 @@
 [user]
 	name = peter_cygwin_asus
 	email = kelly_zhang921@sina.com
-  core.pager = less
-  
+
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	st = status
@@ -10,4 +9,11 @@
 	ci = commit
 	br = branch
 
+[core]
+  pager = less
+  autocrlf = false
+  safecrlf = false
+  whitespace = cr-at-eol
 
+[push]
+  default = simple
